@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="/layout/layout :: head">
+
+
+</head>
+<header th:replace="/layout/layout :: header"></header>
+
+
+<div class="container py-5">
+  <div class="card bg-light border-4">
+    <div class="card-header" th:text="${titulo}"></div>
+    <!-- <div class="col-sm-36 offset-sm-2 text-center"> -->
+
+    <div class="card-body">
+
+      <a class="btn btn-outline-primary btn-xs" th:href="@{/formLLamadaTelefonica/}">LLamada telefonica</a>
+      <a class="btn btn-outline-primary btn-xs" th:href="@{/formRedSocial/}">Red social</a>
+      <a class="btn btn-outline-primary btn-xs" th:href="@{/formMovBancario/}">Movimiento bancario</a>
+
+    </div>
+  </div>
+</div>
+
+<footer th:replace="/layout/layout :: footer">
+
+
+</footer>
+
+</html>
